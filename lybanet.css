@@ -4,10 +4,11 @@ background: linear-gradient(122deg, rgba(11, 11, 82, 1) 0%, rgba(9, 121, 89, 1) 
 }
 
 .nav-bar {
-    border: 1px solid white;
+    border: 1px solid rgb(175, 175, 175);
     color: white;
     border-radius: 10px;
     margin: 30px 5%;
     width: 90%;
-    background-color: rgb(22, 20, 20);
+    background-color: rgba(24, 17, 67, 0.251);
+    padding: 1.1rem 8rem;
 }
