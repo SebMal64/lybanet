@@ -1,5 +1,30 @@
 
+//codigo seccion proceso 
+const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos los steps
+        document.querySelectorAll('.process-step, .mobile-step').forEach(step => {
+            observer.observe(step);
+        });
+
+        // Asegurar que los steps aparezcan en orden con pequeño delay
+        document.addEventListener('DOMContentLoaded', () => {
+            const steps = document.querySelectorAll('.process-step, .mobile-step');
+            steps.forEach((step, index) => {
+                step.style.transitionDelay = `${index * 0.1}s`;
+            });
+        });
 
 
 //Codigo acordeon FAQ
