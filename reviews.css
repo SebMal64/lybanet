@@ -1,0 +1,102 @@
+
+.reseñas-contenedor {
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.reseñas-contenedor h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Contenedor de las cards - La clave del diseño responsive */
+.cards-wrapper {
+    display: flex;
+    flex-direction: column; /* Por defecto (móvil) es columna */
+    gap: 2.5rem; /* Espacio entre cards */
+}
+
+/* Estilos individuales de cada Card */
+.review-card {
+background: #baffff;
+background: linear-gradient(132deg, rgba(186, 255, 255, 1) 0%, rgba(224, 255, 226, 1) 100%);    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative; /* Para posicionar el icono de comillas de forma absoluta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto sutil al pasar el mouse para dar interactividad */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icono de comillas */
+.quote-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #af2424; /* Un gris muy claro */
+}
+
+/* El texto de la reseña */
+.review-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* Contenedor de la info del cliente (foto y texto) */
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espacio entre la foto y el texto */
+}
+
+/* Estilo de la foto del cliente */
+.client-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos del nombre y puesto */
+.client-details h4 {
+    color: #333;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+
+.client-details p {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+/* --- MEDIA QUERY PARA ESCRITORIO (PC) --- */
+@media (min-width: 768px) {
+    .cards-wrapper {
+        flex-direction: row; /* Cambia a fila en pantallas grandes */
+        /* Esto hará que las 3 cards tengan el mismo ancho y quepan en la fila */
+        justify-content: space-between;
+    }
+
+    /* Hacemos que cada card ocupe un tercio del ancho, menos el espacio del gap */
+    .review-card {
+        flex: 1; /* Cada card se expandirá para llenar el espacio equitativamente */
+        /* Aseguramos que todas tengan la misma altura aunque el contenido varíe */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Empujamos la info del cliente hacia la parte inferior de la card */
+    .client-info {
+        margin-top: auto;
+    }
+}

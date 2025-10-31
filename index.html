@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="lybanet.css" />
   <link rel="stylesheet" href="section-guide.css"/>
+  <link rel="stylesheet" href="reviews.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -125,45 +126,52 @@
 </section>   -->
 
 
-  <!-- Reseñas -->
-  <section id="reseñas" class="bg-[#FFD0B3]/30 py-16 px-6 text-center">
-    <h3 class="text-2xl font-bold mb-10">Lo que dicen nuestros clientes</h3>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+   <section class="reseñas-contenedor">
+        <h2>Lo que dicen nuestros clientes</h2> <!-- Título opcional -->
 
-      <!-- Reseña 1 -->
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <img src="https://i.pravatar.cc/100?img=1" alt="Cliente 1" class="w-16 h-16 rounded-full mx-auto mb-4">
-        <div class="flex justify-center mb-2 text-yellow-400">
-          ★★★★★
+        <div class="cards-wrapper">
+
+            <!-- Card 1 -->
+            <div class="review-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p class="review-text">"El servicio fue excepcional. Desde el primer momento entendieron nuestras necesidades y las superaron. ¡Totalmente recomendados!"</p>
+                <div class="client-info">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Foto de María García">
+                    <div class="client-details">
+                        <h4>María García</h4>
+                        <p>Directora de Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="review-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p class="review-text">"Increíble la calidad del trabajo entregado. El equipo es profesional, rápido y muy accesible. Definitivamente volveré a trabajar con ellos."</p>
+                <div class="client-info">
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Foto de Carlos López">
+                    <div class="client-details">
+                        <h4>Carlos López</h4>
+                        <p>Emprendedor</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="review-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p class="review-text">"Quedé más que satisfecho con los resultados. Lograron captar perfectamente la esencia de nuestra marca y plasmarla en el diseño final."</p>
+                <div class="client-info">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Foto de Ana Martínez">
+                    <div class="client-details">
+                        <h4>Ana Martínez</h4>
+                        <p>Gerente de Proyectos</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <p class="text-gray-600 mb-4">“Mi negocio empezó a recibir más mensajes desde el primer día. La landing quedó
-          excelente.”</p>
-        <h4 class="font-semibold">Andrea Gómez</h4>
-      </div>
-
-      <!-- Reseña 2 -->
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <img src="https://i.pravatar.cc/100?img=2" alt="Cliente 2" class="w-16 h-16 rounded-full mx-auto mb-4">
-        <div class="flex justify-center mb-2 text-yellow-400">
-          ★★★★★
-        </div>
-        <p class="text-gray-600 mb-4">“Súper profesionales. Me ayudaron a crear una página enfocada en ventas, y
-          funcionó.”</p>
-        <h4 class="font-semibold">Luis Fernández</h4>
-      </div>
-
-      <!-- Reseña 3 -->
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <img src="https://i.pravatar.cc/100?img=3" alt="Cliente 3" class="w-16 h-16 rounded-full mx-auto mb-4">
-        <div class="flex justify-center mb-2 text-yellow-400">
-          ★★★★★
-        </div>
-        <p class="text-gray-600 mb-4">“Excelente servicio y comunicación. Recomiendo totalmente Lybanet.”</p>
-        <h4 class="font-semibold">María López</h4>
-      </div>
-
-    </div>
-  </section>
+    </section>
 
 
   <div class="process-section">
