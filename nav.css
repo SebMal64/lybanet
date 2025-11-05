@@ -1,0 +1,10 @@
+.nav-bar {
+    color: white;
+    border-radius: 10px;
+    margin: 30px 5%;
+    width: 90%;
+    background-color: rgba(142, 182, 255, 0.86);
+    padding: 1.1rem 8rem;
+    position: fixed;
+    z-index: 30;
+}

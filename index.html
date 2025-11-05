@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="lybanet.css" />
-  <link rel="stylesheet" href="section-guide.css"/>
-  <link rel="stylesheet" href="reviews.css"/>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="hero.css" />  
+  <link rel="stylesheet" href="proceso.css" />
+  <link rel="stylesheet" href="section-guide.css" />
+  <link rel="stylesheet" href="reviews.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,71 +30,72 @@
     </nav>
   </header>
 
-  <section
-    class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-8 md:px-16 bg-gradient-to-r from-[#0B0B52] via-[#097959] to-[#00D4FF] text-white">
-    <!-- Lado Izquierdo: Figura genérica -->
-    <div class="w-full md:w-2/5 flex justify-center items-center mb-10 md:mb-0">
-      <div class="w-72 h-72 bg-white/20 rounded-2xl flex items-center justify-center">
-        <span class="text-white/70 text-sm">[ Imagen / Gráfico aquí ]</span>
+  <section class="hero-section">
+    <div class="decorative-element ele-1"></div>
+        <div class="decorative-element ele-2"></div>
+    <div class="hero-container">
+      <!-- Lado Izquierdo: Imagen -->
+
+
+      <!-- Lado Derecho: Texto -->
+      <div class="hero-text-container">
+        <h2 class="hero-title">Ayudamos a negocios acrecer online con landing pages</h2>
+        <!-- Lista de beneficios -->
+        <ul class="benefits-list">
+          <li class="benefit-item">
+            <span class="check-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </span>
+            Aumenta tu tasa de conversión de clientes.
+          </li>
+          <li class="benefit-item">
+            <span class="check-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </span>
+            Mejora la experiencia del usuario.
+          </li>
+          <li class="benefit-item">
+            <span class="check-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </span>
+            Construye la identidad de tu marca.
+          </li>
+        </ul>
+
+        <!-- Beneficios parte 2 -->
+        <div class="benefits-grid">
+          <div class="hero-benefit">
+            <h4>Diseños modernos y personalizados</h4>
+          </div>
+          <div class="hero-benefit">
+            <h4>Optimizado para captar clientes</h4>
+          </div>
+          <div class="hero-benefit">
+            <h4>Adaptado a cualquier dispositivo</h4>
+          </div>
+        </div>
+
+        <!-- Botón CTA -->
+        <button class="cta-button">
+          Agendar una reunión
+        </button>
       </div>
-    </div>
+      <div class="hero-image-container">
 
-    <!-- Lado Derecho: Texto -->
-    <div class="w-full md:w-3/5 flex flex-col items-start justify-center text-left space-y-5">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight ">Haz crecer tu negocio con una landing page</h1>
-      <h2 class="text-lg text-white/90 ">Creamos landing pages que generan ventas y suscripciones para tu negocio.</h2>
-
-      <!-- Lista de beneficios -->
-      <ul class="space-y-3 mt-4">
-        <li class="flex items-center gap-3">
-          <span class="bg-green-500 rounded-full p-1.5 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          Aumenta tu tasa de conversión de clientes.
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="bg-green-500 rounded-full p-1.5 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          Mejora la experiencia del usuario.
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="bg-green-500 rounded-full p-1.5 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          Construye la identidad de tu marca.
-        </li>
-      </ul>
-      <!--benefits part 2 -->
-      <div class="grid md:grid-cols-3 gap-2">
-        <div class="hero-benefit ">
-          <h4 class="font-semibold mb-2">Diseños modernos y personalizados</h4>
-        </div>
-        <div class="hero-benefit ">
-          <h4 class="font-semibold mb-2">Optimizado para captar clientes</h4>
-        </div>
-        <div class="hero-benefit ">
-          <h4 class="font-semibold mb-2">Adaptado a cualquier dispositivo</h4>
+        <div class="hero-img-square">
+          <img src="pictures/hero-img.png" class="hero-img" alt="hero-img">
         </div>
       </div>
 
-      <!-- Botón CTA -->
-      <button
-        class="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all">
-        Agendar una reunión
-      </button>
+
     </div>
   </section>
-
   <!-- <section class="bg-white py-16 px-6">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     
@@ -126,58 +129,61 @@
 </section>   -->
 
 
-   <section class="reseñas-contenedor">
-        <h2>Lo que dicen nuestros clientes</h2> <!-- Título opcional -->
+  <section class="reseñas-contenedor">
+    <h2>Lo que dicen nuestros clientes</h2> <!-- Título opcional -->
 
-        <div class="cards-wrapper">
+    <div class="cards-wrapper">
 
-            <!-- Card 1 -->
-            <div class="review-card">
-                <i class="fas fa-quote-right quote-icon"></i>
-                <p class="review-text">"El servicio fue excepcional. Desde el primer momento entendieron nuestras necesidades y las superaron. ¡Totalmente recomendados!"</p>
-                <div class="client-info">
-                    <img src="https://i.pravatar.cc/150?img=1" alt="Foto de María García">
-                    <div class="client-details">
-                        <h4>María García</h4>
-                        <p>Directora de Marketing</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="review-card">
-                <i class="fas fa-quote-right quote-icon"></i>
-                <p class="review-text">"Increíble la calidad del trabajo entregado. El equipo es profesional, rápido y muy accesible. Definitivamente volveré a trabajar con ellos."</p>
-                <div class="client-info">
-                    <img src="https://i.pravatar.cc/150?img=32" alt="Foto de Carlos López">
-                    <div class="client-details">
-                        <h4>Carlos López</h4>
-                        <p>Emprendedor</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="review-card">
-                <i class="fas fa-quote-right quote-icon"></i>
-                <p class="review-text">"Quedé más que satisfecho con los resultados. Lograron captar perfectamente la esencia de nuestra marca y plasmarla en el diseño final."</p>
-                <div class="client-info">
-                    <img src="https://i.pravatar.cc/150?img=12" alt="Foto de Ana Martínez">
-                    <div class="client-details">
-                        <h4>Ana Martínez</h4>
-                        <p>Gerente de Proyectos</p>
-                    </div>
-                </div>
-            </div>
-
+      <!-- Card 1 -->
+      <div class="review-card">
+        <i class="fas fa-quote-right quote-icon"></i>
+        <p class="review-text">"El servicio fue excepcional. Desde el primer momento entendieron nuestras necesidades y
+          las superaron. ¡Totalmente recomendados!"</p>
+        <div class="client-info">
+          <img src="https://i.pravatar.cc/150?img=1" alt="Foto de María García">
+          <div class="client-details">
+            <h4>María García</h4>
+            <p>Directora de Marketing</p>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="review-card">
+        <i class="fas fa-quote-right quote-icon"></i>
+        <p class="review-text">"Increíble la calidad del trabajo entregado. El equipo es profesional, rápido y muy
+          accesible. Definitivamente volveré a trabajar con ellos."</p>
+        <div class="client-info">
+          <img src="https://i.pravatar.cc/150?img=32" alt="Foto de Carlos López">
+          <div class="client-details">
+            <h4>Carlos López</h4>
+            <p>Emprendedor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="review-card">
+        <i class="fas fa-quote-right quote-icon"></i>
+        <p class="review-text">"Quedé más que satisfecho con los resultados. Lograron captar perfectamente la esencia de
+          nuestra marca y plasmarla en el diseño final."</p>
+        <div class="client-info">
+          <img src="https://i.pravatar.cc/150?img=12" alt="Foto de Ana Martínez">
+          <div class="client-details">
+            <h4>Ana Martínez</h4>
+            <p>Gerente de Proyectos</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
   <div class="process-section">
     <!-- Versión Desktop/Tablet -->
     <div class="process-desktop">
-       <div class="text-center mb-6">
+      <div class="text-center mb-6">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestro Proceso de Trabajo</h2>
         <p class="text-lg text-gray-600 max-w-3xl mx-auto">
           Un enfoque sistemático y probado para crear landing pages que convierten.
@@ -228,21 +234,22 @@
         </div>
         <div class="step-content">
           <div class="step-number">
-            
+
             <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-100 text-green-600">
               <i class="fas fa-palette text-xl"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-800">Diseño de Prototipo</h3>
           </div>
           <div class="features-text">
-          <p>Creamos un diseño visual de tu landing page enfocado en la experiencia de usuario y optimizado para
-            conversión. Te presentamos un prototipo para tu aprobación.</p>
-          <div class="features-list">
-            <div class="feature-item">Wireframes y estructura de la página</div>
-            <div class="feature-item">Diseño UI/UX centrado en conversión</div>
-            <div class="feature-item">Prototipo interactivo para revisión</div>
-            <div class="feature-item">Iteraciones basadas en tu feedback</div>
-          </div></div>
+            <p>Creamos un diseño visual de tu landing page enfocado en la experiencia de usuario y optimizado para
+              conversión. Te presentamos un prototipo para tu aprobación.</p>
+            <div class="features-list">
+              <div class="feature-item">Wireframes y estructura de la página</div>
+              <div class="feature-item">Diseño UI/UX centrado en conversión</div>
+              <div class="feature-item">Prototipo interactivo para revisión</div>
+              <div class="feature-item">Iteraciones basadas en tu feedback</div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -257,18 +264,19 @@
             <h3 class="text-xl font-bold text-gray-800">Desarrollo & Optimización</h3>
           </div>
           <div class="features-text">
-          <p>Transformamos el diseño en una landing page funcional, rápida y optimizada para todos los dispositivos.
-            Implementamos las mejores prácticas técnicas para maximizar el rendimiento.</p>
-          <div class="features-list">
-            <div class="feature-item">Desarrollo con mejores prácticas</div>
-            <div class="feature-item">Optimización de velocidad y SEO</div>
-            <div class="feature-item">Implementación de analytics</div>
-            <div class="feature-item">Pruebas en múltiples dispositivos</div>
+            <p>Transformamos el diseño en una landing page funcional, rápida y optimizada para todos los dispositivos.
+              Implementamos las mejores prácticas técnicas para maximizar el rendimiento.</p>
+            <div class="features-list">
+              <div class="feature-item">Desarrollo con mejores prácticas</div>
+              <div class="feature-item">Optimización de velocidad y SEO</div>
+              <div class="feature-item">Implementación de analytics</div>
+              <div class="feature-item">Pruebas en múltiples dispositivos</div>
+            </div>
           </div>
-        </div></div>
+        </div>
         <div class="step-image">
           <div class="image-placeholder">
-             <img src="pictures/step3.jpg" alt="Imagen Paso 1" class=" scale-x-[-1] w-full h-auto rounded-lg">
+            <img src="pictures/step3.jpg" alt="Imagen Paso 1" class=" scale-x-[-1] w-full h-auto rounded-lg">
 
           </div>
         </div>
@@ -284,20 +292,21 @@
         </div>
         <div class="step-content">
           <div class="flex items-center mb-4">
-                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-orange-100 text-orange-600 mr-4">
-                  <i class="fas fa-rocket text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-800">Entrega & Soporte</h3>
-              </div>
-              <div class="features-text">
-          <p>Lanzamos tu landing page y te entregamos todo lo necesario para administrarlo. Ofrecemos soporte
-            post-entrega para asegurar que todo funcione perfectamente.</p>
-          <div class="features-list">
-            <div class="feature-item">Lanzamiento y configuración final</div>
-            <div class="feature-item">Entrega de código y documentación</div>
-            <div class="feature-item">Capacitación para administrar tu página</div>
-            <div class="feature-item">Soporte técnico durante el primer mes</div>
-          </div></div>
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-orange-100 text-orange-600 mr-4">
+              <i class="fas fa-rocket text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Entrega & Soporte</h3>
+          </div>
+          <div class="features-text">
+            <p>Lanzamos tu landing page y te entregamos todo lo necesario para administrarlo. Ofrecemos soporte
+              post-entrega para asegurar que todo funcione perfectamente.</p>
+            <div class="features-list">
+              <div class="feature-item">Lanzamiento y configuración final</div>
+              <div class="feature-item">Entrega de código y documentación</div>
+              <div class="feature-item">Capacitación para administrar tu página</div>
+              <div class="feature-item">Soporte técnico durante el primer mes</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -308,7 +317,7 @@
       <div class="mobile-step" id="mobile-step1">
         <div class="mobile-number">
           <div class="number-circle">1</div>
-     
+
         </div>
         <div class="mobile-content">
           <h2>Consulta & Estrategia</h2>
@@ -381,74 +390,81 @@
 
 
   <!-- FAQ -->
- 
-<section class="guide-section">
+
+  <section class="guide-section">
     <div class="container">
-        <h2>¿Landing Page o One-Page Website?</h2>
-        <p class="subtitle">Descubre la solución perfecta para tus objetivos</p>
-        
-        <!-- Toggle Buttons -->
-        <div class="toggle-container">
-            <div class="toggle-buttons" data-active="landing">
-                <div class="toggle-slider"></div>
-                <button class="toggle-btn active" data-target="landing">
-                  <!-- <span class="toggle-icon">💼</span>--> 
-                    <span class="toggle-text">Quiero vender o captar leads</span>
-                </button>
-                
-                <button class="toggle-btn" data-target="portfolio">
-                  <!-- <span class="toggle-icon">💼</span>--> 
-                    <span class="toggle-text">Quiero mostrar mi portafolio</span>
-                </button>
+      <h2>¿Landing Page o One-Page Website?</h2>
+      <p class="subtitle">Descubre la solución perfecta para tus objetivos</p>
+
+      <!-- Toggle Buttons -->
+      <div class="toggle-container">
+        <div class="toggle-buttons" data-active="landing">
+          <div class="toggle-slider"></div>
+          <button class="toggle-btn active" data-target="landing">
+            <!-- <span class="toggle-icon">💼</span>-->
+            <span class="toggle-text">Quiero vender o captar leads</span>
+          </button>
+
+          <button class="toggle-btn" data-target="portfolio">
+            <!-- <span class="toggle-icon">💼</span>-->
+            <span class="toggle-text">Quiero mostrar mi portafolio</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="content-wrapper">
+        <!-- Landing Page Content -->
+        <div class="content-item active" id="landing-content">
+          <div class="text-content">
+            <h3>Landing Page de Alto Impacto</h3>
+            <p>Diseñada específicamente para convertir visitantes en clientes. Cada elemento está optimizado para guiar
+              al usuario hacia una acción concreta.
+              Consigue más clientes con una landing page diseñada específicamente para convertir. Cada elemento está
+              optimizado para guiar a tus visitantes hacia la acción que buscas, maximizando el rendimiento de tus
+              campañas en Google Ads, Facebook Ads y email marketing.
+
+              Obtén resultados medibles con un enfoque total en conversiones y ROI. La solución perfecta para quien
+              busca eficiencia máxima y crecimiento tangible en cada campaña publicitaria.
+            </p>
+
+
+
+            <a href="#precios-landing" class="cta-button">Quiero una Landing Page</a>
+          </div>
+          <div class="image-placeholder">
+            <!-- Aquí va tu imagen -->
+            <div class="placeholder">
+              <img src="pictures/guide-1.png" alt="Imagen Landing Page" class="w-full h-auto rounded-lg">
             </div>
+          </div>
         </div>
 
-        <!-- Content Area -->
-        <div class="content-wrapper">
-            <!-- Landing Page Content -->
-            <div class="content-item active" id="landing-content">
-                <div class="text-content">
-                    <h3>Landing Page de Alto Impacto</h3>
-                    <p>Diseñada específicamente para convertir visitantes en clientes. Cada elemento está optimizado para guiar al usuario hacia una acción concreta.
-                      Consigue más clientes con una landing page diseñada específicamente para convertir. Cada elemento está optimizado para guiar a tus visitantes hacia la acción que buscas, maximizando el rendimiento de tus campañas en Google Ads, Facebook Ads y email marketing.
+        <!-- Portfolio Content -->
+        <div class="content-item" id="portfolio-content">
+          <div class="text-content">
+            <h3>One-Page Website Profesional</h3>
+            <p>Olvida las presentaciones fragmentadas.
+              Tu tarjeta de presentación digital reúne tu trabajo,
+              servicios y experiencia en una sola página elegante.
+              Ofrece toda tu información clave de forma centralizada y accesible.
+              Disfruta de una navegación sencilla y una experiencia rápida y fluida. La solución perfecta para
+              profesionales y pequeños negocios que buscan eficiencia e impacto inmediato, simplificando tu conexión con
+              clientes.</p>
 
-Obtén resultados medibles con un enfoque total en conversiones y ROI. La solución perfecta para quien busca eficiencia máxima y crecimiento tangible en cada campaña publicitaria.
-                    </p>
-                    
-                    
-                    
-                    <a href="#precios-landing" class="cta-button">Quiero una Landing Page</a>
-                </div>
-                <div class="image-placeholder">
-                    <!-- Aquí va tu imagen -->
-                    <div class="placeholder">
-                      <img src="pictures/guide-1.png" alt="Imagen Landing Page" class="w-full h-auto rounded-lg">
-                    </div>
-                </div>
-            </div>
 
-            <!-- Portfolio Content -->
-            <div class="content-item" id="portfolio-content">
-                <div class="text-content">
-                    <h3>One-Page Website Profesional</h3>
-                    <p>Olvida las presentaciones fragmentadas. 
-                      Tu tarjeta de presentación digital reúne tu trabajo, 
-                      servicios y experiencia en una sola página elegante.
-                       Ofrece toda tu información clave de forma centralizada y accesible.
-                       Disfruta de una navegación sencilla y una experiencia rápida y fluida. La solución perfecta para profesionales y pequeños negocios que buscan eficiencia e impacto inmediato, simplificando tu conexión con clientes.</p>
-                  
-                    
-                    <a href="#precios-portfolio" class="cta-button">Quiero un One-Page Website</a>
-                </div>
-                <div class="image-placeholder">
-                      <img src="pictures/guide-2.jpg" alt="Imagen Landing Page" class="w-full h-auto rounded-lg">
-                    <div class="placeholder">                      <img src="pictures/guide-2.jpg" alt="Imagen Landing Page" class="w-full h-auto rounded-lg">
-</div>
-                </div>
+            <a href="#precios-portfolio" class="cta-button">Quiero un One-Page Website</a>
+          </div>
+          <div class="image-placeholder">
+            <img src="pictures/guide-2.jpg" alt="Imagen Landing Page" class="w-full h-auto rounded-lg">
+            <div class="placeholder"> <img src="pictures/guide-2.jpg" alt="Imagen Landing Page"
+                class="w-full h-auto rounded-lg">
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
   <section class="py-16 px-4 md:px-8 lg:px-16">
     <div class="max-w-7xl mx-auto">
       <!-- Encabezado -->
@@ -691,7 +707,7 @@ Obtén resultados medibles con un enfoque total en conversiones y ROI. La soluci
         </div>
       </div>
 
-      
+
     </div>
   </section>
   <!-- FAQ Section -->
@@ -704,14 +720,14 @@ Obtén resultados medibles con un enfoque total en conversiones y ROI. La soluci
         <!-- Pregunta 1 -->
         <div class="border border-gray-200 rounded-xl overflow-hidden">
           <button class="w-full flex justify-between items-center p-5 text-left text-gray-800 font-medium faq-toggle">
-            <span>  ¿Qué incluye el precio?
-            El precio incluye diseño, desarrollo, optimización básica y entrega de la
+            <span> ¿Qué incluye el precio?
+              El precio incluye diseño, desarrollo, optimización básica y entrega de la
               landing page funcional. No incluye dominio ni hosting.</p>
-         ¿Ofrecen mantenimiento?
-            Sí, ofrecemos planes de mantenimiento mensual que incluyen actualizaciones,
+              ¿Ofrecen mantenimiento?
+              Sí, ofrecemos planes de mantenimiento mensual que incluyen actualizaciones,
               backups y soporte técnico.
               ¿Puedo hacer cambios después?
-            Sí, según tu plan incluye soporte post-entrega. Para cambios mayores, ofrecemos
+              Sí, según tu plan incluye soporte post-entrega. Para cambios mayores, ofrecemos
               servicios adicionales.</span>
             <svg class="w-5 h-5 text-gray-500 transition-transform duration-300 transform" fill="none"
               stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -723,7 +739,7 @@ Obtén resultados medibles con un enfoque total en conversiones y ROI. La soluci
           </div>
         </div>
 
-       
+
         <!-- Pregunta 3 -->
         <div class="border border-gray-200 rounded-xl overflow-hidden">
           <button class="w-full flex justify-between items-center p-5 text-left text-gray-800 font-medium faq-toggle">
@@ -789,7 +805,8 @@ Obtén resultados medibles con un enfoque total en conversiones y ROI. La soluci
             </svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-5 text-gray-600">
-            <p class="pb-4">Sí, según tu plan incluye soporte post-entrega. Para cambios mayores, ofrecemos servicios adicionales.
+            <p class="pb-4">Sí, según tu plan incluye soporte post-entrega. Para cambios mayores, ofrecemos servicios
+              adicionales.
           </div>
         </div>
       </div>
