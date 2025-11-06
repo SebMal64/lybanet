@@ -1,39 +1,13 @@
  
 
  
- .decorative-element {
-     position: relative;
-     border-radius: 50%;
-     filter: blur(20px);
-     opacity: 0.6;
- }
-
- .ele-1 {
-    position: absolute;
-    border-radius: 200px;
-    background-color: rgba(80, 138, 182, 0.732);
-    right: 5rem; /* Cambié -5rem a 5rem */
-    width: 15rem; /* Reducí de 20rem a 15rem */
-    height: 15rem; /* Reducí de 20rem a 15rem */
-    top: 2rem; /* Cambié -5rem a 2rem */
-    z-index: 1; /* Cambié a 1 para que esté detrás */
-}
-
-.ele-2 {
-    position: absolute;
-    border-radius: 200px;
-    background-color: rgba(44, 140, 92, 0.279);
-    right: 30rem; 
-    width: 20rem; /* Reducí de 30rem a 20rem */
-    height: 20rem; /* Reducí de 30rem a 20rem */
-    top: 25rem; /* Cambié 23rem a 15rem */
-    z-index: 1; /* Cambié a 1 para que esté detrás */
-}
 
  /* Hero Section */
+
  .hero-section {
     overflow: hidden;
-     width: 100%;
+position: relative; 
+  width: 100%;
      min-height: 100vh;
      display: flex;
      flex-direction: column-reverse;
@@ -51,7 +25,7 @@ background: linear-gradient(132deg, rgba(255, 244, 224, 1) 0%, rgba(228, 245, 24
      display: flex;
      flex-direction: column;
      align-items: center;
-     gap: 2.5rem;
+     gap: 4rem;
  }
 
  /* Lado izquierdo: Imagen */
@@ -107,8 +81,10 @@ background: linear-gradient(132deg, rgba(255, 244, 224, 1) 0%, rgba(228, 245, 24
 
  /* Lista de beneficios */
  .hero-benefit {
+    text-align: center;
     border: 1px solid rgb(133, 133, 133);
     border-radius: 8px;
+    padding: 10px 20px;
 }
  .benefits-list {
      display: flex;
@@ -142,13 +118,11 @@ background: linear-gradient(132deg, rgba(255, 244, 224, 1) 0%, rgba(228, 245, 24
  .benefits-grid {
      display: grid;
      grid-template-columns: 1fr;
-     gap: 0.5rem;
+     gap: 1rem;
      width: 100%;
  }
 
- .hero-benefit {
-     padding: 0.5rem 0;
- }
+
 
  .hero-benefit h4 {
      font-weight: 600;
@@ -176,6 +150,34 @@ background: linear-gradient(132deg, rgba(255, 244, 224, 1) 0%, rgba(228, 245, 24
 
  /* Responsive para tablets y desktop */
  @media (min-width: 768px) {
+    .decorative-element {
+     position: relative;
+     border-radius: 50%;
+     filter: blur(20px);
+     opacity: 0.6;
+ }
+
+ .ele-1 {
+    position: absolute;
+    border-radius: 200px;
+    background-color: rgba(80, 138, 182, 0.732);
+    right: 5rem; /* Cambié -5rem a 5rem */
+    width: 15rem; /* Reducí de 20rem a 15rem */
+    height: 15rem; /* Reducí de 20rem a 15rem */
+    top: 2rem; /* Cambié -5rem a 2rem */
+    z-index: 1; /* Cambié a 1 para que esté detrás */
+}
+
+.ele-2 {
+    position: absolute;
+    border-radius: 200px;
+    background-color: rgba(44, 140, 92, 0.279);
+    right: 30rem; 
+    width: 20rem; /* Reducí de 30rem a 20rem */
+    height: 20rem; /* Reducí de 30rem a 20rem */
+    top: 25rem; /* Cambié 23rem a 15rem */
+    z-index: 1; /* Cambié a 1 para que esté detrás */
+}
      .hero-section {
          padding: 0 4rem;
      }
